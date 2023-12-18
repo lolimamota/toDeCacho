@@ -26,12 +26,12 @@ img{
     width: 50px;
 }
 
+/* rotação da primeira e segunda barra */
+
 .menuAnimated{
     display: inline-block;
     cursor: pointer;
 }
-
-/* estilização do menu horizontal */
 
 .bar1, .bar2, .bar3{
     width: 35px;
