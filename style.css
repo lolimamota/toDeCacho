@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILIZAÇÃO DA HEADER */
+
+header{
+    border: solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgmenu{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imgheader{
+    margin-right: 12rem;
+}
+
+img{
+    width: 50px;
+}
+
+.menuAnimated{
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* estilização do menu horizontal */
+
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 3px;
+    background-color: #9368A6;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* rotação da primeira e segunda barra */
+
+.change .bar1{
+    transform: translate(0, 8px) rotate(-45deg);
+}
+
+/* escondendo segunda barrinha */
+.change .bar2{
+    opacity: 0;
+}
+
+/* rotação da primeira e segunda barra */
+.change .bar3{
+    transform: translate(0, -8px) rotate(45deg);
+}
+
