@@ -82,3 +82,19 @@ button{
 .change .menuFly{
     display: flex;
 }
+
+/* ESTILIZAÇÃO DO MAIN */
+
+.cabeludo{
+    border: solid red;
+    height: 100vh;
+    background-image: url(./imagens/mobile/cabeludo_mob.png);
+    background-repeat: no-repeat;
+    background-position: 0 left;
+    background-size: contain;
+}
+
+.divCabeludo{
+    width: 50%;
+    color: #fff;
+}
