@@ -7,27 +7,32 @@
     font-family: 'Montserrat', sans-serif;
     font-family: 'Playfair Display', serif;
 }
+
 /* ESTILIZAÇÃO DA HEADER */
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .imgmenu{
     display: flex;
     justify-content: flex-start;
 }
+
 .imgheader{
     margin-right: 8rem;
 }
+
 img{
     width: 55px;
 }
+
 /* rotação da primeira e segunda barra */   
 .menuAnimated{
     display: inline-block;
     cursor: pointer;
-    background-color: #9368A6;
+    background-color: #9767A9;
     width: 2.5rem;
     height: 2.5rem;
 }
@@ -67,66 +72,138 @@ button{
 .newTab{
     position: absolute;
     display: none;
-    background-color: #9368A6;
+    background-color: #9767A9;
     min-width: 4rem;
     top: 40px;
 }
+
 .newTab a{
     color: #fff;
     padding: 0.5rem;
     text-decoration: none;
     display: block;
 }
-/* .menuFly:hover .newTab{
-    display: block;
-} */
+
 .show{
     display: block;
 }
+
 .change .menuFly{
     display: flex;
 }
 
 /* ESTILIZAÇÃO DO MAIN */
-
-.cabeludo{
-    height: 48vh;
-    background-image: url(./imagens/mobile/cabeludo_mob.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
-}
-
-.divCabeludo{
-    height: 48vh;
+main{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    color: #fff;
+    overflow: auto; 
+}
+
+.apresentacao{
+
+    background-image: url(./imagens/mobile/cabeludo_mob.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.divTitle{
     margin-left: 2rem;
+    padding-top: 3.5rem;
 }
 
-.divCabeludo h1{
-    font-family: 'Playfair Display', serif;
-    width: 80%;
-    margin-top: 2.1rem;
-    font-size: 2.5rem;
-}
-
-.divCabeludo h4{
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 1.5rem;
-    width: 60%;
-    font-size: 1rem;
-    font-weight: 100;
-    
-}
-
-/* h1{
-    
+h1{
+    width: 45%;
+    font-size: 2.2rem;
+    font-family: 'Playfair Display, Black Roman';
+    color: #FFF;
+    margin-bottom: 0.5rem;
 }
 
 h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    color: #FFF;
+}
 
-} */
+#divText, #divText2, #divText3, #divText4{
+    margin-top: 8rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #9767A9;
+    color: #FFF;
+    position: relative;
+}
+
+#divText2{
+    margin-top: 12rem;
+}
+
+#divText3{
+    margin-top: 16rem;
+}
+
+#divText4{
+    margin-top: 12rem;
+}
+
+#divText4 p, #divText4 h2{
+    margin-bottom: 0;
+}
+
+h2{
+    font-family: 'Playfair Display, Black Roman';
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+p{
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.meninasPrincesas, .maju, .praia{
+    position: relative;
+}
+
+.meninasPrincesas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    bottom: 0;
+    left: 1rem;
+    background-image: url(./imagens/mobile/meninas_princesas_foto_mob.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.maju::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    bottom: 0;
+    left: 1rem;
+    background-image: url(./imagens/mobile/maju_foto_mob.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.praia::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    bottom: 0;
+    left: 1rem;
+    background-image: url(./imagens/mobile/cabeludopraia_mob.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
