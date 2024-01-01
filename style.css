@@ -128,7 +128,7 @@ h4{
     color: #FFF;
 }
 
-#divText, #divText2, #divText3, #divText4{
+#divText, #divText2, #divText3, #divText4, #divText5{
     margin-top: 8rem;
     padding: 1rem 2rem 1rem 2rem;
     background-color: #9767A9;
@@ -148,6 +148,10 @@ h4{
     margin-top: 12rem;
 }
 
+#divText5{
+    margin-top: 14.5rem;
+}
+
 #divText4 p, #divText4 h2{
     margin-bottom: 0;
 }
@@ -164,7 +168,7 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
-.meninasPrincesas, .maju, .praia{
+.meninasPrincesas, .maju, .praia, .rainha, .maeFilha{
     position: relative;
 }
 
@@ -197,7 +201,7 @@ p{
 .praia::before{
     content: "";
     position: absolute;
-    top: 0;
+    top: 0rem;
     right: 1rem;
     bottom: 0;
     left: 1rem;
@@ -207,3 +211,28 @@ p{
     background-size: contain;
 }
 
+.rainha::before{
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    bottom: 0;
+    left: 1rem;
+    background-image: url(./imagens/mobile/rainha_foto_mob.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.maeFilha::before{
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    bottom: 0;
+    left: 1rem;
+    background-image: url(./imagens/mobile/mae_filha_mob.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
