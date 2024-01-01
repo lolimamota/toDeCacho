@@ -136,7 +136,7 @@ h4{
     position: relative;
 }
 
-#divText2{
+#divText2, #divText4{
     margin-top: 12rem;
 }
 
@@ -144,13 +144,11 @@ h4{
     margin-top: 16rem;
 }
 
-#divText4{
-    margin-top: 12rem;
-}
 
 #divText5{
     margin-top: 14.5rem;
 }
+
 
 #divText4 p, #divText4 h2{
     margin-bottom: 0;
@@ -168,7 +166,7 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
-.meninasPrincesas, .maju, .praia, .rainha, .maeFilha{
+.meninasPrincesas, .maju, .praia, .rainha, .maeFilha, .lavando, .platinada{
     position: relative;
 }
 
@@ -232,6 +230,32 @@ p{
     bottom: 0;
     left: 1rem;
     background-image: url(./imagens/mobile/mae_filha_mob.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lavando::before{
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    bottom: 0;
+    left: 1rem;
+    background-image: url(./imagens/mobile/lavando_foto_mob.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.platinada::before{
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    bottom: 0;
+    left: 1rem;
+    background-image: url(./imagens/mobile/platinada_mob.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
