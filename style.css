@@ -260,3 +260,7 @@ p{
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.gallery{
+    display: grid;
+}
