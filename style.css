@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playfair+Display&family=Playfair+Display+SC&display=swap');
 
+/* RESETS */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Playfair Display', serif;
+}
+
+img{
+    max-width: 100%;
 }
 
 /* ESTILIZAÇÃO DA HEADER */
@@ -24,7 +30,7 @@ header{
     margin-right: 8rem;
 }
 
-img{
+header > img{
     width: 55px;
 }
 
@@ -262,5 +268,51 @@ p{
 }
 
 .gallery{
+    border: solid limegreen;
+    width: 100%;
     display: grid;
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr); */
+    grid-template-areas:
+    "cachinho cachinho"
+    "principe queenB"
+    "principe thais"
+    "gloria gloria"
+    "cabeludo modelo" 
+    "Snoopy modelo";
+    justify-items: center;
+    align-items: stretch;
+    justify-content: center;
+}
+
+ .cachinho{
+    grid-area: cachinho;
+}
+
+.principe{
+    grid-area: principe;
+}
+
+.queenBJordan{
+    grid-area: queenB;
+}
+
+.thaisAraujo{
+    grid-area: thais;
+}
+
+.gloriaMaria{
+    grid-area: gloria;
+}
+
+.cabeludoUnhas{
+    grid-area: cabeludo;
+}
+
+.penteadoDog{
+    grid-area: Snoopy;
+}
+
+.modelo{
+    grid-area: modelo;
 }
